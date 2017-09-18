@@ -1,0 +1,23 @@
+<br><br>
+<p>
+<a id="my-open-click"> Open </a>
+</p>
+
+<div id="foo" style="border: 1px solid red; >
+   <a id="my-hide-click"> Hide </a>
+   <p> bar </p>
+</div>
+
+<script>
+  $("#foo").fadeOut();
+
+  $("#my-open-click").click(function(){
+    $("#foo").fadeIn()
+  })
+
+  $("#my-hide-click").click(function(){
+    $("#foo").fadeOut();
+   })
+</script>
+
+<!--hide&show,隐藏与显示功能，fadeOut&fadeIn慢慢消失或慢慢显示,slideUp&slideDown从下往上（上往下）慢慢显示出一个对话框-->
